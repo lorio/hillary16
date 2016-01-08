@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+      <meta charset="UTF-8">
+      <title>Hillary Keel</title>
+     <%= stylesheet_link_tag    "application", :media => "all" %>
+     <%= javascript_include_tag "application" %>
+     <%= csrf_meta_tags %>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+    </head>
+    <body id="<%= params[:controller].parameterize %>_controller">
+      <div id="wrap">
+        <div class="container">
+          <header>
+           <%= render 'layouts/header' %>
+          </header>
+        <div class="container">
+            <% flash.each do |key, value| %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+            <% end %>
+            <%= yield %>
+          </div>
+      </div>  
+        <div id="push"></div>
+      </div>
+
+      <div id="footer">
+       <div class="container"> 
+        <p class="small">&bdquo;Alles ist verloren, nur nicht das Gl&uuml;ck.&quot; &nbsp; &ldquo;All is lost but happiness.&rdquo; &nbsp; &laquo;Tout est perdu sauf le bonheur.&raquo;</p>
+<p class="muted credit"><i>Jacques Pr&eacute;vert</i> &nbsp;  &copy; <%= Time.now.year %> <a href="mailto:hillary.keel@gmail.com"> Hillary Keel</a>.com</p>
+      </div>
+    </div>
+    </body>
+</html>

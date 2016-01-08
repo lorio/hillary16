@@ -1,0 +1,1 @@
+This is a simple website for writer and translator Hillary Keel made with Ruby on Rails by Lori Ortiz artanddesign.us
