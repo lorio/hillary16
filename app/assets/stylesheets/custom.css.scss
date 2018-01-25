@@ -157,4 +157,11 @@ p {
 		  	margin: 50px auto;
 	 }
 }
+@media (min-width: 1200px) {
+  .span12 > .poem {
+    width: 1170px;
+    margin-left: 60px;
+  }
+}
+
 
