@@ -8,6 +8,8 @@ Hillary::Application.routes.draw do
   
   get "poetry" => 'static_pages#poetry'
 
+  get "hypnotherapy" => 'static_pages#hypnotherapy'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

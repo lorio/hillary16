@@ -150,8 +150,28 @@ p {
 	  text-indent: 5em;	
 	} */		
 }
-/*if narrower than Xpx
-	hide #projects_controller*/
+.backdrop {
+  background-image: image-url('banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  h2 {
+    padding: 11em 0 1em 1em;
+    color: #fcffef;
+  }
+}
+h4 { font-size: 1.5em; }
+.fig {
+  padding-bottom: 10px; 
+  img {margin-top: 10px}
+}
+blockquote {
+  padding: 0;
+  p:first-child { 
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+}
+
 @media (max-width: 543px) {
 	.home {
 		  	margin: 50px auto;

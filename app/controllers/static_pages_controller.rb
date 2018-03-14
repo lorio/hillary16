@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
   
   def poetry
   end
+
+  def hypnotherapy
+  end
 end
