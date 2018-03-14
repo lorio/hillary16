@@ -1,3 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  def title(text)
+    content_for :title, text
+  end
 end
