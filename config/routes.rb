@@ -5,10 +5,12 @@ Hillary::Application.routes.draw do
   get "about" => 'static_pages#about'
   
   get "languages" => 'static_pages#languages'
-  
-  get "poetry" => 'static_pages#poetry'
 
   get "hypnotherapy" => 'static_pages#hypnotherapy'
+
+  get "contact" => redirect'{mailto:hillary.keel@gmail.com}'.opaque
+
+  get "writing" => redirect('http://writing.hillarykeel.com')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

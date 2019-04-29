@@ -12,11 +12,11 @@
       <nav>  
       <div class="nav-collapse collapse">
 	       	<ul class="nav pull-right">
-						<li><a href="mailto:hillary.keel@gmail.com">Contact</a></li>
-						<li><%= link_to "About HK", about_path %></li>
-						<li><a href="http://writing.hillarykeel.com">Writing</a></li>
-            <li><%= link_to "Hypnotherapy", hypnotherapy_path %></li>
-						<li><%= link_to "Translation", languages_path %></li>					
+						<li><%= link_to t('global.menu.contact'), contact_path %></li> 
+						<li><%= link_to t('global.menu.about'), about_path %></li>
+            <li><%= link_to t('global.menu.writing'), writing_path %></li>
+            <li><%= link_to t('global.menu.hypnotherapy'), hypnotherapy_path %></li>
+						<li><%= link_to t('global.menu.languages'), languages_path %></li>					
 	        </ul>        
 	      </div>                
       </nav>

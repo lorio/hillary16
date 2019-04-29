@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '3.2.11'
@@ -19,6 +19,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass', '~> 2.2.2.0'
   gem 'newrelic_rpm'
+  gem 'rails-i18n', '~> 3.0', '>= 3.0.1'
+#  gem 'actionview-encoded_mail_to', '~> 1.0', '>= 1.0.7'
 end
 
 
