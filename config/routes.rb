@@ -8,7 +8,7 @@ Hillary::Application.routes.draw do
 
   get "hypnotherapy" => 'static_pages#hypnotherapy'
 
-  get "contact" => redirect'{mailto:hillary.keel@gmail.com}'.opaque
+  #get "contact" => redirect('mailto:hillary.keel@gmail.com')
 
   get "writing" => redirect('http://writing.hillarykeel.com')
 

@@ -12,7 +12,7 @@
       <nav>  
       <div class="nav-collapse collapse">
 	       	<ul class="nav pull-right">
-						<li><%= link_to t('global.menu.contact'), contact_path %></li> 
+						<li><%= mail_to 'hillary.keel@gmail.com', t('global.menu.contact') %></li> 
 						<li><%= link_to t('global.menu.about'), about_path %></li>
             <li><%= link_to t('global.menu.writing'), writing_path %></li>
             <li><%= link_to t('global.menu.hypnotherapy'), hypnotherapy_path %></li>
